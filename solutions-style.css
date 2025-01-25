@@ -883,7 +883,7 @@ footer {
 
 /**responsive design tamplate satrt here**/
 
-@media(max-width:1318px) {
+@media(max-width:1115px) {
 
   .feature {
     display: flex;
