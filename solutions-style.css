@@ -147,7 +147,7 @@
 /* Task Section Layout */
 .task-section {
     display: flex;
-    padding: 3.75rem 6.25rem 0rem;
+    padding: 2.75rem 6.25rem 0rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: hidden;
@@ -255,7 +255,7 @@ strong{
         height: auto;
         background: #F2F2F2;
         padding: 10px 16px 10px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.3rem;
         border-radius: 25px;
         text-align: center;
         justify-content: center;
@@ -428,7 +428,7 @@ margin: 3rem 0rem 2rem;
 
 .C-T-A-container{
   width: 100%;
-  padding: 0rem 6rem 3rem;
+  padding: 1rem 6rem 3rem;
   overflow: hidden;
 }
 .cta-inner{
@@ -883,7 +883,7 @@ footer {
 
 /**responsive design tamplate satrt here**/
 
-@media(max-width:1115px) {
+@media(max-width:1366px) {
 
   .feature {
     display: flex;
