@@ -100,7 +100,7 @@
 /* Feature Section */
 .feature {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 2rem;
   justify-content: center;
   align-items: stretch; 
@@ -135,7 +135,7 @@
   font-family: ProximaNovaaltRegular;
   font-size: 1rem;
   color: #fff;
-  margin: 0.5rem -34px 0;
+  margin: 0.5rem -3px 0;
 }
 
 /**hero section end here**/
@@ -246,7 +246,7 @@ strong{
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 35px 23px 0px 9px;
+        margin: 35px 23px 0px 12px;
         color: #091C39;
     }
 
@@ -304,19 +304,20 @@ flex: 1;
 width: 50%;
 }
 
-h2{
+.text h2{
 font-size: 2.3rem;
 font-family: ProximaNovaaltBold;
 color: #091C39;
 padding: 0rem 2rem 0rem;
 }
-p{
+
+.text p{
 font-size: 1.2rem;
 justify-content: center;
 align-items: center;
 font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
 color: #666666;
-padding: 0rem 2rem 0rem;
+padding: 1rem 2rem 1rem;
 line-height: 1.5;
 }
 
@@ -391,12 +392,12 @@ margin: 3rem 0rem 2rem;
 /**carsoule design start here**/
 
 .item{
-  height: 240px;
-  margin-top: 1rem;
+  height: 315px;
+  margin: 1rem 1rem 1rem;
   padding:1rem;
   background-color: #F2F2F2;
   border-radius: 8px;
-  border: 2px solid black;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
 }
 
 .owl-carousel{
@@ -409,11 +410,20 @@ margin: 3rem 0rem 2rem;
   font-size: 1.75rem;
   color: #091C39;
 }
+.item p{
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+  color: #666666;
+  padding: 1rem 2rem 1rem;
+  line-height: 1.5;
+}
 
 .owl-carousel .active{
   background-color: transparent;
 }
-/* Optional: Add a hover effect */
+
 .owl-prev:hover, .owl-next:hover {
   background-color:transparent;
 }
@@ -435,7 +445,7 @@ margin: 3rem 0rem 2rem;
   max-width:1400px ;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #3247CB;
+  background-color: #262E70;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
@@ -443,12 +453,18 @@ margin: 3rem 0rem 2rem;
 
 .inner-cta-two{
 margin-bottom: -0.28rem;
+padding: 0rem 2rem 0rem;
+flex: 1;
+}
+.inner-cta-two img{
+width: 500px;
 }
 
 .inner-cta-one{
   padding: 0rem 5rem 0rem;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .inner-cta-one h4{
   padding: 0rem;
@@ -467,6 +483,7 @@ margin-bottom: -0.28rem;
 .inner-cta-three{
  text-align: right;
  margin-right: 5rem;
+ flex: 1;
 }
 
 .inner-cta-three a{
@@ -614,7 +631,7 @@ font-size: 2rem;
 @media (max-width: 480px) {
   .qna-container {
     padding: 2rem 1.5rem;
-    margin: 1rem 1rem;
+    margin: 2.67rem 1rem;
     margin-bottom:5rem;
   }
 
@@ -1010,11 +1027,131 @@ text-align: center;
   line-height: 1.3;
   }
 
+  /**item carsoule section start here**/
+
+  .item{
+    height: 325px;
+    margin: 1rem 1rem 1rem;
+    padding:1rem;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+  }
+  
+  .owl-carousel{
+   padding: 2rem 6rem 0rem;
+  }
+  
+  
+  .item h3{
+    padding: 0rem 2rem 0.89rem;
+    font-size: 1.75rem;
+    color: #091C39;
+  }
+
+  /**item carsoule section start here**/
 }
 
 @media (max-width: 1024px) {
+
+
+/* Hero Section */
+
+.hero-container {
+  display: flex;
+  padding: 2rem 3rem 0rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-heading {
+  font-size: 2.75rem;
+  font-family: ProximaNovaaltBold;
+  padding: 0rem 2.3rem 1rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Feature Section */
+.feature {
+  display: flex;
+  gap: 2rem;
+  padding: 2.78rem;
+  justify-content: center;
+  align-items: stretch; 
+  flex-wrap: wrap;
+}
+
+.feature-container {
+  display: flex;
+  gap: 1.4rem;
+  padding: 1rem;
+  width: 400px; 
+  height: 130px;
+  text-align: left; 
+  transition: transform 0.3s ease;
+  background-color:#cfe2ff21;
+}
+
+.feature-left h3 {
+  font-family: ProximaNovaaltBold;
+  font-size: 1.2rem;
+  color:#fff;
+  font-weight: 800;
+  margin: 0;
+}
+
+.feature-left p {
+  font-family: ProximaNovaaltRegular;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0.5rem -34px 0;
+}
+
+/**feature end here**/
+
+
+/**cta section start here**/
+.C-T-A-container{
+  padding: 1rem 3.45rem 3rem;
+}
+
+.inner-cta-two{
+  margin-bottom: -0.29rem;
+  padding: 0rem 1rem 0rem;
+  }
+  .inner-cta-two img{
+    width: 428px;
+    }
+
+.inner-cta-one{
+  padding: 0rem 1.4rem 0rem;
+}
+.inner-cta-one h4{
+  font-size: 1.30rem;
+}
+.inner-cta-one p{
+  font-size: 1.2rem;
+}
+
+.inner-cta-three{
+ text-align: right;
+ margin-right: 1rem;
+}
+
+/**cta section end here**/
+
+/**hero section end here**/
+
+
+
   .task-section {
-      padding: 3rem 2rem 0;
+      padding: 2.78rem 3.78rem 0;
   }
 
   .benifit-task{
@@ -1066,10 +1203,331 @@ text-align: center;
   align-items: center;
 }
 
+
+ /**slider style start here**/
+
+ .marketing-slider{
+  padding: 1.75rem 3.75rem 0rem;
+}
+
+.headings{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 35px 23px 0px 9px;
+    color: #091C39;
+}
+
+.dot{
+    padding: 8px 10px 8px;
+    margin-bottom: 1rem;
+    font-size: 0.80rem;
 }
 
 
-/* Media Query for Mobile Responsiveness */
+.mySlides {
+  display: flex;
+  padding: 40px 31px;
+  margin: 20px auto;
+  max-width: 1400px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-right-img{
+  width: 50%;
+}
+
+.slider-right-img{
+  max-width: 100%;;
+}
+
+.slider-inner{
+    display: flex;
+}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+position: relative;
+
+}
+.active {
+  background-color: #E9628C;
+  color: #fff;
+  }
+
+
+.text {
+flex: 1;
+width: 50%;
+}
+
+.text h2{
+font-size: 2.3rem;
+font-family: ProximaNovaaltBold;
+color: #091C39;
+padding: 0rem 1rem 0rem;
+}
+
+.text p{
+font-size: 1.2rem;
+justify-content: center;
+align-items: center;
+font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+color: #666666;
+padding: 1rem 1rem 3rem;
+line-height: 1.5;
+}
+
+
+.prev{
+top: -5rem;
+padding: 0.60rem;
+margin-left: 3rem;
+
+}
+.next{
+top: -5rem;
+padding: 0.60rem;
+margin-left: 1rem;
+}
+
+/**carsoule design start here**/
+
+.item{
+  height: 325px;
+  margin: 1rem 1rem 1rem;
+  padding:1rem;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+}
+
+.owl-carousel{
+ padding: 2rem 3rem 0rem;
+}
+
+
+.item h3{
+  padding: 0rem 1rem 0.89rem;
+  font-size: 1.40rem;
+  color: #091C39;
+}
+.item p{
+  font-size: 1rem;
+  padding: 0rem 1rem 1rem;
+}
+
+.owl-carousel .active{
+  background-color: transparent;
+}
+
+}
+
+
+
+/**821px section**/
+@media (max-width: 821px) {
+
+  /* Hero Section */
+
+.hero-container {
+  display: flex;
+  padding: 2rem 3rem 0rem;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  font-family: ProximaNovaaltBold;
+  padding: 0rem 2.3rem 1rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.hero-para {
+  font-size: 1rem;
+  padding: 0.45rem 2.1rem 2.3rem;
+  line-height: 1.3;
+  font-family: ProximaNovaaltRegular;
+  color: #e6dfdf;
+}
+
+/* Feature Section */
+.feature {
+  display: flex;
+  gap: 2rem;
+  padding: 2.78rem;
+  justify-content: center;
+  align-items: stretch; 
+  flex-wrap: wrap;
+}
+
+.feature-container {
+  display: flex;
+  gap: 1.4rem;
+  padding: 1rem;
+  width: 300px; 
+  height: 130px;
+  text-align: left; 
+  transition: transform 0.3s ease;
+  background-color:#cfe2ff21;
+}
+
+.feature-left h3 {
+  font-family: ProximaNovaaltBold;
+  font-size: 1.2rem;
+  color:#fff;
+  font-weight: 800;
+  margin: 0;
+}
+
+.feature-left p {
+  font-family: ProximaNovaaltRegular;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0.5rem -34px 0;
+}
+
+/**hero section end here**/
+
+
+ /**slider style start here**/
+
+ .marketing-slider{
+  padding: 1.75rem 2.75rem 0rem;
+}
+
+.headings {
+  margin: 26px 23px -6px 9px;
+}
+
+.dot{
+  padding: 9px 11px 9px;
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
+}
+
+
+
+.mySlides {
+  display: flex;
+  padding: 40px 31px;
+  margin: 20px auto;
+  max-width: 1400px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+flex: 1;
+width: 50%;
+}
+
+.text h2{
+  font-size: 1.78rem;
+font-family: ProximaNovaaltBold;
+color: #091C39;
+padding: 0rem 1rem 0rem;
+}
+
+.text p{
+font-size: 1rem;
+}
+
+
+.prev{
+top: -5rem;
+padding: 0.60rem;
+margin-left: 3rem;
+
+}
+.next{
+top: -5rem;
+padding: 0.60rem;
+margin-left: 1rem;
+}
+
+
+/**cta section start here**/
+.C-T-A-container {
+  padding: 1rem 2.45rem 3rem;
+}
+
+.inner-cta-two{
+  margin-bottom: -1.6rem;
+  padding: 0rem 1rem 0rem;
+  }
+  .inner-cta-two img{
+    width: 357px;
+    }
+
+.inner-cta-one{
+  padding: 1rem 1.6rem 1rem;
+}
+.inner-cta-one h4{
+  font-size: 1.2rem;
+}
+.inner-cta-one p{
+  font-size: 1rem;
+}
+
+.inner-cta-three{
+ text-align: right;
+ margin-right: 1rem;
+}
+
+/**cta section end here**/
+
+
+/**carsoule design start here**/
+
+.item{
+  height: 360px;
+  margin: 1rem 1rem 1rem;
+  padding:1rem;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+}
+
+.owl-carousel{
+ padding: 2rem 2rem 0rem;
+}
+
+
+.item h3{
+  padding: 0rem 1rem 0.89rem;
+  font-size: 1.20rem;
+  color: #091C39;
+}
+.item p{
+  font-size: 0.901rem;
+  padding: 0rem 1rem 0.89rem;
+}
+
+.owl-carousel .active{
+  background-color: transparent;
+}
+
+}
+/**821px section end**/
+
 @media (max-width: 768px) {
   /* Hero Section Adjustments */
   .hero-container {
@@ -1128,10 +1586,141 @@ text-align: center;
   .feature-left p {
       font-size: 0.9rem; 
   }
+
+  /**slider style**/
+  .marketing-slider {
+    padding: 1.75rem 1.75rem 
+}
+/**slider style end **/
+
+/**cta section start here**/
+.C-T-A-container {
+  padding: 1rem 1.45rem 3rem;
+  margin-top: -2rem;
+}
+
+.inner-cta-two{
+  margin-bottom: -0.3rem;
+  padding: 0rem 1rem 0rem;
+  }
+  .inner-cta-two img{
+    width: 346px;
+    }
+
+.inner-cta-one{
+  padding: 1rem 1.6rem 1rem;
+}
+.inner-cta-one h4{
+  font-size: 1.2rem;
+}
+.inner-cta-one p{
+  font-size: 1rem;
+}
+
+.inner-cta-three{
+ text-align: right;
+ margin-right: 1rem;
+}
+
+/**cta section end here**/
+
+
+/**carsoule design start here**/
+
+.item{
+  height: 370px;
+  margin: 1rem 1rem 1rem;
+  padding:1rem;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+}
+
+.owl-carousel{
+ padding: 2rem 2rem 0rem;
+}
+
+
+.item h3{
+  padding: 0rem 1rem 0.89rem;
+  font-size: 1.10rem;
+  color: #091C39;
+}
+.item p{
+  font-size: 0.89rem;
+  padding: 0rem 1rem 0.89rem;
+}
+
+.owl-carousel .active{
+  background-color: transparent;
+}
+
 }
 
 
 @media (max-width: 768px) {
+
+/* Hero Section */
+
+.hero-container {
+  flex-direction: column;
+  padding: 2rem 1rem 0rem;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  width: 100%;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  font-family: ProximaNovaaltBold;
+  padding: 0rem 1rem 1rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.hero-para {
+  font-size: 1rem;
+  padding: 0.45rem 2rem 2.3rem;
+  line-height: 1.3;
+  font-family: ProximaNovaaltRegular;
+  color: #e6dfdf;
+}
+
+/* Feature Section */
+.feature {
+  flex-direction: column;
+  gap: 2rem;
+  padding:1rem 2rem 1.78rem;
+}
+
+.feature-container {
+  width: 100%; 
+  height: auto;
+}
+
+.feature-left h3 {
+  font-size: 1.2rem;
+}
+
+.feature-left p {
+  font-family: ProximaNovaaltRegular;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0.5rem -34px 0;
+}
+
+/**hero section end here**/
+
+}
+
+/**821px section end**/
+
+@media (max-width: 768px) {
+
   .task-section {
       padding: 2rem 1rem 0;
   }
@@ -1188,6 +1777,41 @@ text-align: center;
 
 
 @media (max-width: 480px) {
+
+
+  /**hero section**/
+
+  .hero-btn{
+    background-color: #0a1559;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+    transition: all ease 0.5s;
+    font-size: 1rem;
+    padding: 9px 15px;
+    margin: 0rem -0.67rem 1rem;
+    text-decoration: none;
+  }
+  
+  .hero-btn-sign-up {
+    background-color: #e6638a;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+    transition: all ease 0.5s;
+    font-size: 1rem;
+    padding: 9px 15px;
+    margin: 0rem 1.3rem 1rem;
+    text-decoration: none;
+  }
+
+  /**hero section end here**/
   .task-section {
       padding: 1rem;
       flex-direction: column;
@@ -1235,6 +1859,126 @@ text-align: center;
       font-size: 0.85rem;
       line-height: 1.5;
   }
+
+
+ /**slider style start here**/
+
+ .marketing-slider {
+  margin-top: -4rem;
+}
+ .mySlides {
+  padding: 21px 20px 20px;
+}
+
+.dot{
+display: none;
+}
+
+.text {
+flex: 1;
+width: 50%;
+}
+
+.text h2{
+  font-size: 1rem;
+  padding: 0rem 0rem 0.78rem;
+
+}
+
+.text p{
+font-size: 0.6rem;
+padding: 0rem 0rem 3rem;
+}
+
+
+.prev{
+width: 30px;
+height: 30px;
+top: -4.80rem;
+padding: 0.18rem;
+margin-left: 1rem;
+}
+.next{
+  width: 30px;
+  height: 30px;
+  top: -4.80rem;
+  padding: 0.18rem;
+margin-left: 0.78rem;
+}
+
+/**cta section start here**/
+
+.cta-inner{
+  grid-template-columns: 1fr;
+}
+.C-T-A-container {
+  padding: 1rem 1.45rem 3rem;
+  margin-top: -2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.inner-cta-two{
+  margin-bottom: -1.4rem;
+  padding: 0rem 1rem 0rem;
+  }
+  .inner-cta-two img{
+    width: 300px;
+    }
+
+.inner-cta-one{
+  padding: 1rem 1.6rem 1rem;
+}
+.inner-cta-one h4{
+  font-size: 1.2rem;
+}
+.inner-cta-one p{
+  font-size: 1rem;
+}
+
+.inner-cta-three{
+  text-align: center;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+}
+
+/**cta section end here**/
+
+
+/**carsoule design start here**/
+
+.item{
+  height: 200px;
+  margin: 1rem 1rem 1rem;
+  padding:1rem;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+}
+
+.owl-carousel{
+ padding: 1rem 2rem 0rem;
+}
+
+
+.item h3{
+  padding: 0rem 1rem 0.89rem;
+  font-size: 1.10rem;
+  color: #091C39;
+}
+.item p{
+  font-size: 0.89rem;
+  padding: 0rem 1rem 0.89rem;
+}
+
+.owl-text h2{
+  font-size: 1.5rem;
+  padding: 0rem 3rem 0rem
+}
+.owl-text p {
+  text-align: center;
+  padding: 1.67rem 2rem 0rem;
+}
 }
 
 @media only screen and (max-width: 300px) {
