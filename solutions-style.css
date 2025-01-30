@@ -915,7 +915,7 @@ footer {
     display: flex;
     gap: 1.4rem;
     padding: 1rem;
-    width: 250px; 
+    width: 270px; 
     height: 110px;
     text-align: left; 
     transition: transform 0.3s ease;
@@ -939,7 +939,7 @@ footer {
     font-family: ProximaNovaaltRegular;
     font-size: 0.789rem;
     color: #fff;
-    margin: 0.5rem -34px 0;
+    margin: 0.5rem -1px 0;
   }
   
 
@@ -1010,27 +1010,27 @@ text-align: center;
   width: 50%;
   }
   
-  h2{
+  .owl-text h2{
   font-size: 2.2rem;
   font-family: ProximaNovaaltBold;
   color: #091C39;
   padding: 0rem 2rem 0rem;
   }
 
-  p{
-  font-size: 1.2rem;
-  justify-content: center;
-  align-items: center;
-  font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
-  color: #666666;
-  padding: 0rem 2rem 0rem;
-  line-height: 1.3;
-  }
+  .owl-text p {
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+    color: #666666;
+    padding: 2rem 2rem 0rem;
+    line-height: 1.2;
+}
 
   /**item carsoule section start here**/
 
   .item{
-    height: 325px;
+    height: 370px;
     margin: 1rem 1rem 1rem;
     padding:1rem;
     background-color: #F2F2F2;
@@ -1045,7 +1045,7 @@ text-align: center;
   
   .item h3{
     padding: 0rem 2rem 0.89rem;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     color: #091C39;
   }
 
