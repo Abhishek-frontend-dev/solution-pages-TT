@@ -900,7 +900,7 @@ footer {
 
 /**responsive design tamplate satrt here**/
 
-@media(min-width:1430px){
+@media(min-width:1430px) and (max-width:1440px){
 
   .feature-container {
     display: flex !important;
