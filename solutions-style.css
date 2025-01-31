@@ -16,6 +16,35 @@
     box-sizing: border-box;
 }
 
+@media(min-width:1443px) and (max-width:1460px)  {
+
+  .feature-container {
+    display: flex;
+    gap: 1.4rem;
+    padding: 1rem;
+    width: 280px; 
+    height: 140px;
+    text-align: left; 
+    transition: transform 0.3s ease;
+    background-color:#f77205!important;
+  }
+
+  .feature-left p {
+    font-family: ProximaNovaaltRegular;
+    font-size: 0.90rem;
+    color: #fff;
+    margin: 0.5rem -3px 0;
+  }
+  
+  .item{
+    height: 350px;
+    margin: 1rem 1rem 1rem;
+    padding:1rem;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+  }
+}
 
     /**hero section start here**/
 /* Hero Section */
@@ -900,35 +929,7 @@ footer {
 
 /**responsive design tamplate satrt here**/
 
-@media(min-width:1443px) and (max-width:1460px)  {
 
-  .feature-container {
-    display: flex;
-    gap: 1.4rem;
-    padding: 1rem;
-    width: 280px; 
-    height: 140px;
-    text-align: left; 
-    transition: transform 0.3s ease;
-    background-color:#f77205 !important;
-  }
-
-  .feature-left p {
-    font-family: ProximaNovaaltRegular;
-    font-size: 0.90rem;
-    color: #fff;
-    margin: 0.5rem -3px 0;
-  }
-  
-  .item{
-    height: 350px;
-    margin: 1rem 1rem 1rem;
-    padding:1rem;
-    background-color: #F2F2F2;
-    border-radius: 8px;
-    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
-  }
-}
 
 
 @media(max-width:1366px) {
