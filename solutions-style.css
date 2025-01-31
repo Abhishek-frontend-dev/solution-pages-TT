@@ -910,7 +910,7 @@ footer {
     height: 140px;
     text-align: left; 
     transition: transform 0.3s ease;
-    background-color:#f77205;
+    background-color:#f77205 !important;
   }
 
   .feature-left p {
