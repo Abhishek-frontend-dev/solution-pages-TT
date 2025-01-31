@@ -900,14 +900,14 @@ footer {
 
 /**responsive design tamplate satrt here**/
 
-@media(min-width:1430px){
+@media(min-width:1430px) and (max-width:1440px){
 
   .feature-container {
     display: flex !important;
     gap: 1.4rem !important;
     padding: 1rem !important;
-    width: 280px !important;
-    height: 110px !important;
+    width: 281px !important;
+    height: 142px !important;
     text-align: left !important;
     transition: transform 0.3s ease !important;
     background-color: #cfe2ff21 !important;
