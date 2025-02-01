@@ -918,12 +918,29 @@ footer {
 
 @media(min-width:1430px) and (max-width:1440px){
 
+
+  .hero-heading {
+    font-size: 2rem;
+    font-family: ProximaNovaaltBold;
+    padding: 0rem 2.3rem 1rem;
+    color: #fff;
+    font-weight: 800;
+  }
+  
+  .hero-para {
+    font-size: 1rem;
+    padding: 0.45rem 2.3rem 2.3rem;
+    line-height: 1.3;
+    font-family: ProximaNovaaltRegular;
+    color: #e6dfdf;
+  }
+
   .feature-container {
     display: flex !important;
     gap: 1.4rem !important;
     padding: 1rem !important;
     width: 281px !important;
-    height: 142px !important;
+    height: 170px !important;
     text-align: left !important;
     transition: transform 0.3s ease !important;
     background-color: #cfe2ff21 !important;
@@ -937,7 +954,7 @@ footer {
 }
 
   .item{
-    height: 350px;
+    height: 224px;
     margin: 1rem 1rem 1rem;
     padding:1rem;
     background-color: #F2F2F2;
