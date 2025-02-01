@@ -961,6 +961,14 @@ footer {
     border-radius: 8px;
     box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
   }
+  .inner-cta-one h4 {
+    padding: 0rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: ProximaNovaaltBold;
+    line-height: 1.3;
+}
+
 }
 
 
