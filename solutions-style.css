@@ -299,7 +299,11 @@ justify-content: center;
 align-items: center;
 
 }
-
+.list-btn{
+  position: relative;
+  left: 150px;
+  top: 10px;
+}
 
 .text {
 flex: 1;
