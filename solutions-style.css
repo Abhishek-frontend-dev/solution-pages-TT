@@ -415,43 +415,61 @@ margin: 3rem 0rem 2rem;
 
 /**carsoule design start here**/
 
-.item{
-  height: 230px;
-  margin: 1rem 1rem 1rem;
-  padding:1rem;
-  background-color: #F2F2F2;
-  border-radius: 8px;
-  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.329);
+.second-slider {
+  padding: 1.75rem 6.25rem 0rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.owl-carousel{
- padding: 2rem 6rem 0rem;
-}
-
-
-.item h3{
-  padding: 0rem 2rem 0.89rem;
-  font-size: 1.75rem;
-  color: #091C39;
-  text-align: center;
-}
-.item p{
-  font-size: 1.2rem;
+/* Wrapper for the carousel */
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Ensuring slides fit perfectly */
+.carousel-container {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  width: max-content;
+ padding:1rem 2rem 1rem;
+}
+
+/* Fix for spacing and cut-off issue */
+.carousel-item {
+  flex: 0 0 calc(33.33% - 13.34px);
+  max-width: calc(33.33% - 13.34px);
+  background: #F2F2F2;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.329);
+  padding: 1rem;
+  box-sizing: border-box;
+  height:auto;
+}
+
+.carousel-container::after {
+  content: "";
+  display: block;
+  flex: 0 0 calc(33.33% - 13.34px);
+}
+
+.carousel-item h3 {
+  font-size: 1.5rem;
+  color: #091C39;
+  font-family: ProximaNovaaltBold;
+}
+
+.carousel-item p {
+  font-size: 1rem;
   color: #666666;
-  padding: 1rem 2rem 1rem;
   line-height: 1.5;
-  text-align: center;
-}
-
-.owl-carousel .active{
-  background-color: transparent;
-}
-
-.owl-prev:hover, .owl-next:hover {
-  background-color:transparent;
+  font-family: ProximaNovaaltRegular, Helvetica, sans-serif;
 }
 
 
@@ -463,9 +481,11 @@ margin: 3rem 0rem 2rem;
 /**cta-section style start here**/
 
 .C-T-A-container{
+
   width: 100%;
   padding: 3rem 6rem 3rem;
   overflow: hidden;
+
 }
 .cta-inner{
   max-width:1400px ;
@@ -475,6 +495,7 @@ margin: 3rem 0rem 2rem;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+  max-width: 1900px;
 }
 
 .inner-cta-two{
@@ -937,12 +958,12 @@ footer {
     background-image: linear-gradient(to right, #040d5b, #e7b0d2);
     justify-content: center;
     align-items: center;
-    padding: 4rem 0; /* Add more vertical padding for better spacing */
+    padding: 4rem 0;
   }
 
   .hero-container {
     display: flex;
-    max-width: 1600px; /* Restrict max width for better readability */
+    max-width: 1900px;
     margin: 0 auto;
     padding: 2rem 6rem;
     gap: 3rem;
@@ -1023,7 +1044,7 @@ h1, h2, h3, p {
 }
 
 .mySlides {
-  max-width: 1400px;
+  max-width: 1900px;
   padding: 50px 60px;
 }
 
@@ -1042,6 +1063,22 @@ h1, h2, h3, p {
 .list-btn {
   width: auto;
   margin: 15px 10px;
+}
+
+/**cta**/
+
+.C-T-A-container{
+  padding: 3rem 10rem 3rem;
+  overflow: hidden;
+}
+.cta-inner{
+  max-width: 1900px;
+}
+
+/**task section**/
+
+.two-col {
+  max-width: 1900px;
 }
 }
 

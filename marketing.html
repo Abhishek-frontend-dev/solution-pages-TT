@@ -221,30 +221,26 @@
 
 <!--slider end here-->
 
-
-<div class="second-slider">
-  <div class="carousel-wrapper">
-    <div class="carousel-container">
-      <div class="carousel-item">
-        <h3>Deadline Management</h3>
-        <p>Meet campaign deadlines through task prioritization and timely reminders, ensuring smooth project execution.</p>
-      </div>
-      <div class="carousel-item">
-        <h3>Team Collaboration</h3>
-        <p>Keep teams aligned across social media campaigns, paid ads, and branding projects for seamless workflow.</p>
-      </div>
-      <div class="carousel-item">
-        <h3>Client Updates</h3>
-        <p>Share progress updates and reports with clients regularly, building trust and enhancing satisfaction.</p>
-      </div>
-      <div class="carousel-item">
-        <h3>Content Flow</h3>
-        <p>Streamline approval processes, reduce bottlenecks, and keep content moving efficiently through the workflow.</p>
-      </div>
-    </div>
+  <div class="owl-text">
+    <h2>Designed for Marketing Excellence</h2>
+    <p class="owl-para">From small creative teams to full-scale marketing agencies, Task Tracker is tailored to fit your needs. Whether you’re managing social media calendars, designing large ad campaigns, or launching product promotions, our tool ensures your team stays productive and organized. </p>
   </div>
-</div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <h3>Deadline Management</h3>
+    <p>Meet campaign deadlines through task prioritization and timely reminders, ensuring smooth project execution.</p></div>
+    <div class="item">
+      <h3>Team Collaboration</h3>
+    <p>Keep teams aligned across social media campaigns, paid ads, and branding projects for seamless workflow.</p></div>
+    <div class="item">
+      <h3>Client Updates</h3>
+    <p>Share progress updates and reports with clients regularly, building trust and enhancing satisfaction.</p></div>
 
+    <div class="item">
+      <h3>Content Flow</h3>
+    <p> Streamline approval processes, reduce bottlenecks, and keep content moving efficiently through the workflow.</p></div>
+</div>
+</div>
 
 
 
@@ -332,14 +328,14 @@ function showSlide(e) {
 
   // Remove active class from all dots for restart
   for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("slider-active");
+    dots[i].classList.remove("active");
   }
 
   // Show the current slide
   slides[slideIndex].style.display = "block";
 
   // Highlight the active dot
-  dots[slideIndex].classList.add("slider-active");
+  dots[slideIndex].classList.add("active");
 }
 
 // Function for automatic sliding every 6 seconds
@@ -392,46 +388,27 @@ accordions.forEach(accordion =>{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.querySelector('.carousel-container');
-  const items = document.querySelectorAll('.carousel-item');
-  let currentIndex = 0;
-  const itemWidth = items[0].offsetWidth + 30; // Account for margin
-  const totalItems = items.length;
-  const cloneSlides = 3; // Number of slides visible at a time
-
-  // Clone first few slides and append them at the end to create the infinite effect
-  for (let i = 0; i < cloneSlides; i++) {
-    let clone = items[i].cloneNode(true);
-    container.appendChild(clone);
-  }
-
-  function moveCarousel() {
-    container.style.transition = "transform 0.5s ease-in-out";
-    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  }
-
-  function resetPosition() {
-    container.style.transition = "none"; // Remove transition effect
-    container.style.transform = `translateX(0px)`;
-    currentIndex = 0;
-  }
-
-  // Autoplay functionality
-  setInterval(() => {
-    currentIndex++;
-    moveCarousel();
-
-    // If it reaches the last duplicated slide, reset to the first real slide
-    if (currentIndex === totalItems) {
-      setTimeout(resetPosition, 500); // Delay to match the transition time
-    }
-  }, 3000); // Auto-slide every 3 seconds
-
-  // Initialize the carousel position
-  moveCarousel();
-});
-
+  $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 12,
+          nav: false,
+          dots:false,
+          autoplay:true,
+          autoplayTimeout:4000,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              600: {
+                  items: 3
+              },
+              1000: {
+                  items: 3
+              }
+          }
+      });
+  });
 
 </script>
 </body>
